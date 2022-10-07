@@ -17,6 +17,12 @@ namespace test2
         {
             InitializeComponent();
             PortCombo.Items.AddRange(System.IO.Ports.SerialPort.GetPortNames());
+
+            //Update interval
+            Timer tmr = new Timer();
+            tmr.Interval = 250;
+            tmr.Tick += timer1_Tick;
+            tmr.Start();
         }
 
         private void ConnectButton_Click(object sender, EventArgs e)
@@ -40,9 +46,22 @@ namespace test2
         {
             if (serialPort1.IsOpen)
             {
+                while (serialPort1.ReadChar() != 'a') { }
+                byte[] packet = new byte[3];
+                serialPort1.Read(packet, 0, 3);
+
+                //Show everything
                 textBox1.Text += serialPort1.ReadExisting();
                 textBox1.SelectionStart = textBox1.TextLength;
                 textBox1.ScrollToCaret();
+
+                //Pot1 data & progressbar
+                Pot1Text.Text = ((int)packet[0]).ToString();
+                progressBar1.Value = packet[0];
+
+                //Pot2 data & progressbar
+                Pot2Text.Text = ((int)packet[1]).ToString();
+                progressBar2.Value = packet[1];
             }
         }
 
@@ -68,10 +87,12 @@ namespace test2
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
-            if (serialPort1.IsOpen)
-            {
+            
+        }
 
-            }
+        private void Pot1Text_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
