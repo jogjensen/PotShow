@@ -30,7 +30,7 @@ namespace PotShow
             if (!serialPort1.IsOpen)
             {
                 serialPort1.PortName = PortCombo.SelectedItem.ToString();
-                ConnectButton.Text ="Disconnect";
+                ConnectButton.Text = "Disconnect";
                 serialPort1.Open();
                 timer1.Enabled = true;
             }
@@ -87,7 +87,7 @@ namespace PotShow
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Pot1Text_TextChanged(object sender, EventArgs e)
@@ -111,6 +111,14 @@ namespace PotShow
             {
                 serialPort1.WriteLine("F");
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Tag = this;
+            form2.Show(this);
+           
         }
     }
 }
