@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace test2
+namespace PotShow
 {
-    public partial class Form1 : Form
+    public partial class PotShowUI : Form
     {
-        public Form1()
+        public PotShowUI()
         {
             InitializeComponent();
             PortCombo.Items.AddRange(System.IO.Ports.SerialPort.GetPortNames());

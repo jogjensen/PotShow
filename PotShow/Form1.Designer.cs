@@ -1,7 +1,7 @@
 ﻿
-namespace test2
+namespace PotShow
 {
-    partial class Form1
+    partial class PotShowUI
     {
         /// <summary>
         /// Required designer variable.
@@ -53,7 +53,7 @@ namespace test2
             // 
             this.PortCombo.FormattingEnabled = true;
             this.PortCombo.Location = new System.Drawing.Point(83, 42);
-            this.PortCombo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PortCombo.Margin = new System.Windows.Forms.Padding(2);
             this.PortCombo.Name = "PortCombo";
             this.PortCombo.Size = new System.Drawing.Size(92, 21);
             this.PortCombo.TabIndex = 0;
@@ -61,7 +61,7 @@ namespace test2
             // ConnectButton
             // 
             this.ConnectButton.Location = new System.Drawing.Point(196, 43);
-            this.ConnectButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ConnectButton.Margin = new System.Windows.Forms.Padding(2);
             this.ConnectButton.Name = "ConnectButton";
             this.ConnectButton.Size = new System.Drawing.Size(97, 19);
             this.ConnectButton.TabIndex = 1;
@@ -80,7 +80,7 @@ namespace test2
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(83, 115);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -91,7 +91,7 @@ namespace test2
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(656, 168);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(73, 17);
             this.radioButton1.TabIndex = 3;
@@ -103,7 +103,7 @@ namespace test2
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(361, 191);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar1.Maximum = 255;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(162, 19);
@@ -113,7 +113,7 @@ namespace test2
             // progressBar2
             // 
             this.progressBar2.Location = new System.Drawing.Point(361, 254);
-            this.progressBar2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.progressBar2.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar2.Maximum = 255;
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Size = new System.Drawing.Size(162, 19);
@@ -144,7 +144,7 @@ namespace test2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(656, 189);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(79, 17);
             this.radioButton2.TabIndex = 9;
@@ -209,7 +209,7 @@ namespace test2
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // PotShowUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -229,9 +229,9 @@ namespace test2
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ConnectButton);
             this.Controls.Add(this.PortCombo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "PotShowUI";
+            this.Text = "PotShowUI";
             this.ResumeLayout(false);
             this.PerformLayout();
 
